@@ -1,0 +1,36 @@
+% service, chkconfig
+
+# Start service
+service <service_inactive> start
+
+# Stop service
+service <service_inactive> stop
+
+# Enable service
+chkconfig <service_disabled> on
+
+# Disable service
+chkconfig <service_enabled> off
+
+# Restart service
+service <service> restart
+
+# Reload service
+service <service_active> reload
+
+# Service status
+service <service> status
+
+# List running services
+chkconfig --list
+
+# Add custom service
+chkconfig --add <service>
+
+# refer: https://bencane.com/2012/01/19/cheat-sheet-systemctl-vs-chkconfig/
+# refer: http://enjoy.aionlife.xyz/blog/2016/01/11/linux-systemctl-replacement-service-and-chkconfig/
+# refer: https://serverfault.com/questions/867322/what-is-the-difference-between-service-and-systemctl
+# refer: https://www.qiancheng.me/post/coding/show-linux-issue-version
+
+
+
